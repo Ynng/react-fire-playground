@@ -124,3 +124,7 @@ footer{
 .middlePart{
   width: 30vw;
 }
+
+.noMargin{
+  margin: 0;
+}

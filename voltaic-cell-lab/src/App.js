@@ -95,6 +95,8 @@ function App() {
     <div className="App">
       <body>
         <div>
+          <h2 className="noMargin">Cathode</h2>
+          <p className="noMargin">Reduction, Gaining mass</p>
           <ElementPicker currentElement={leftElement} elements={elementList} setElement={setLeftElement} />
           <div className = "molarityPickers">
             <MolarityPicker currentMolarity={leftMolarity} molarities={molarityList} setMolarity={setLeftMolarity} />
@@ -113,7 +115,7 @@ function App() {
               onChange={({ y }) => setLeftMolarity(Math.pow(Math.E,y))}
             />
           </div>
-          <h2>{leftMolarity.toFixed(3)} M</h2>
+          <h2 className="noMargin">{leftMolarity.toFixed(3)} M</h2>
         </div>
         <div className = "middlePart">
           <h1>
@@ -125,6 +127,8 @@ function App() {
         </div>
 
         <div>
+          <h2 className="noMargin">Anode</h2>
+          <p className="noMargin">Oxidation, Dissolving</p>
           <ElementPicker currentElement={rightElement} elements={elementList} setElement={setRightElement} />
           <div className = "molarityPickers">
             <MolarityPicker currentMolarity={rightMolarity} molarities={molarityList} setMolarity={setRightMolarity} />
@@ -143,7 +147,7 @@ function App() {
               onChange={({ y }) => setRightMolarity(Math.pow(Math.E,y))}
             />
           </div>
-          <h2>{rightMolarity.toFixed(3)} M</h2>
+          <h2 className="noMargin">{rightMolarity.toFixed(3)} M</h2>
         </div>
       </body>
       <footer>
