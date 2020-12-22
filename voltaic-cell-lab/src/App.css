@@ -1,0 +1,122 @@
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: #61dafb;
+}
+
+a:visited {
+  color: #619cfb;
+}
+
+.elementList{
+  justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.molarityList{
+  justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.molarityButton{
+  background:#cef4ff;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+  width: 75px;
+  border-radius: 10%;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.molarityButton h1,
+.molarityButton h2,
+.molarityButton h3,
+.molarityButton h4{
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+
+.elementButton{
+  background:#cef4ff;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+  height: 125px;
+  width: 125px;
+  border-radius: 10%;
+  text-align: left;
+  padding: 1em;
+  margin: 1em;
+}
+.elementButton h1,
+.elementButton h2,
+.elementButton h3{
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+
+.elementButton h4{
+  font-weight: normal;
+  margin: 0;
+}
+
+.elementButton:hover,
+.molarityButton:hover{
+  background:#9dbac2;
+  cursor:pointer;
+}
+
+.elementButton.active,
+.molarityButton.active{
+  background:#9fff97;
+}
+
+.elementButton.notActive,
+.molarityButton.notActive{
+  background:#ff8686;
+}
+
+.molarityPickers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer p{
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50%;
+  width: 100vw;
+}
