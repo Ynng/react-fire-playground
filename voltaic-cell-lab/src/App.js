@@ -75,11 +75,11 @@ function App() {
     }
     else if(leftElement.EV - rightElement.EV < 0)
     {
-      return -1 * Math.abs(leftElement.EV - rightElement.EV) - 0.0592 / n * Math.log(Math.pow(leftMolarity,leftElement.pow) / Math.pow(rightMolarity,rightElement.pow)) / 2.302585092994046;
+      return -1 * (Math.abs(leftElement.EV - rightElement.EV) - 0.0592 / n * Math.log(Math.pow(leftMolarity,leftElement.pow) / Math.pow(rightMolarity,rightElement.pow)) / 2.302585092994046);
     }
     else if(leftMolarity < rightMolarity)
     {
-      return -1 * leftElement.EV - rightElement.EV - 0.0592 / n * Math.log(Math.pow(rightMolarity,rightElement.pow) / Math.pow(leftMolarity,leftElement.pow)) / 2.302585092994046;
+      return -1 * (leftElement.EV - rightElement.EV - 0.0592 / n * Math.log(Math.pow(rightMolarity,rightElement.pow) / Math.pow(leftMolarity,leftElement.pow)) / 2.302585092994046);
     }
     else if(rightMolarity < leftMolarity)
     {
