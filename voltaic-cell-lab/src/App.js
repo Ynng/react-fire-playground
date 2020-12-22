@@ -75,11 +75,11 @@ function App() {
     }
     else if(leftElement.EV - rightElement.EV < 0)
     {
-      return Math.abs(leftElement.EV - rightElement.EV) - 0.0592 / n * Math.log(Math.pow(leftMolarity,leftElement.pow) / Math.pow(rightMolarity,rightElement.pow)) / 2.302585092994046;
+      return -1 * Math.abs(leftElement.EV - rightElement.EV) - 0.0592 / n * Math.log(Math.pow(leftMolarity,leftElement.pow) / Math.pow(rightMolarity,rightElement.pow)) / 2.302585092994046;
     }
     else if(leftMolarity < rightMolarity)
     {
-      return leftElement.EV - rightElement.EV - 0.0592 / n * Math.log(Math.pow(rightMolarity,rightElement.pow) / Math.pow(leftMolarity,leftElement.pow)) / 2.302585092994046;
+      return -1 * leftElement.EV - rightElement.EV - 0.0592 / n * Math.log(Math.pow(rightMolarity,rightElement.pow) / Math.pow(leftMolarity,leftElement.pow)) / 2.302585092994046;
     }
     else if(rightMolarity < leftMolarity)
     {
@@ -115,7 +115,7 @@ function App() {
           </div>
           <h2>{leftMolarity.toFixed(3)} M</h2>
         </div>
-        <div>
+        <div className = "middlePart">
           <h1>
             E° = {getEMF().toFixed(2)}
           </h1>
@@ -147,7 +147,7 @@ function App() {
         </div>
       </body>
       <footer>
-        <p>Made by <a href="https://github.com/Ynng">Kevin Huang</a> in 2 hours</p>
+        <p>Made by <a href="https://github.com/Ynng">Kevin Huang</a> in 2 hours. Please use in Chrome on desktop at 1080p</p>
         <p>A quick, basic, modern remake of this <a href="https://pages.uoregon.edu/tgreenbo/voltaicCellEMF.html">virtual lab</a> as it was made in Flash, which is old. Adding graphics if I have time.</p>
         <p>Why must online "gizmos" have tiny buttons, blurry text, unresponsive UI and slow animation. Why all the pain of a real lab when they don't even try to simulate the fine details and errors of a real lab.</p>
         
