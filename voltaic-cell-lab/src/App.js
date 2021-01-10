@@ -153,7 +153,7 @@ function App() {
       <footer>
         <p>Made by <a href="https://github.com/Ynng">Kevin Huang</a> in 2 hours. Please use in Chrome on desktop at 1080p</p>
         <p>A quick, basic, modern remake of this <a href="https://pages.uoregon.edu/tgreenbo/voltaicCellEMF.html">virtual lab</a> as it was made in Flash, which is old. Adding graphics if I have time.</p>
-        <p>Why must online "gizmos" have tiny buttons, blurry text, unresponsive UI and slow animation. Why all the pain of a real lab when they don't even try to simulate the fine details and errors of a real lab.</p>
+        {/* <p>Why must online "gizmos" have tiny buttons, blurry text, unresponsive UI and slow animation. Why all the pain of a real lab when they don't even try to simulate the fine details and errors of a real lab.</p> */}
         
       </footer>
     </div>
